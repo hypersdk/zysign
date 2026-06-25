@@ -12,7 +12,7 @@ The MCA21 V3 portal (`efiling.mca.gov.in`) requires a local signing daemon to
 communicate with your USB DSC token. ZySign replaces the proprietary eMudhra
 emBridge daemon entirely, with two modes:
 
-- **ZySign MCA** — desktop app for signing PDFs directly, no browser needed
+- **ZySign** — desktop app for signing PDFs directly, no browser needed
 - **ZySign Bridge** — background service that lets the MCA portal sign through your browser, exactly as before
 
 ---
@@ -51,7 +51,6 @@ Install the PKCS#11 driver for your token **before** launching ZySign:
 | **mToken CryptoID** | `libcryptoid_pkcs11.dylib` | Download from your mToken vendor — use the Apple Silicon build on M-series Macs |
 | **ePass 2003** (Feitian) | `libcastle.1.0.0.dylib` | Download the macOS driver from Feitian |
 | **ProxKey / Watchdata** | `libwdpkcs.dylib` | Download from ProxKey / Watchdata |
-| **eMudhra USB** | `libemudhra_pkcs11.dylib` | Download the emSign macOS driver from eMudhra |
 | **Generic (OpenSC)** | `opensc-pkcs11.so` | `brew install opensc` |
 
 After installing, verify the driver is in place:
@@ -63,7 +62,7 @@ ls /usr/local/lib/libcryptoid_pkcs11.dylib
 
 ---
 
-## Using ZySign MCA (Desktop PDF Signing)
+## Using ZySign (Desktop PDF Signing)
 
 1. Plug in your USB token
 2. Open `ZySign.app`
