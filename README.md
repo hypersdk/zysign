@@ -28,11 +28,12 @@ No Python, Xcode, or Homebrew required. ZySign bundles everything it needs.
 
 ## Install
 
-### Option A — PKG Installer
+### Option A — DMG (drag to Applications)
 
-1. Download `ZySign-<version>.pkg` from the [Releases](https://github.com/hypersdk/zysign/releases) page
-2. Double-click the PKG and follow the installer wizard
-3. Open `/Applications/ZySign.app`
+1. Download `ZySign-1.1.0.dmg` from the [Releases](https://github.com/hypersdk/zysign/releases) page
+2. Open the DMG and drag **ZySign** to `/Applications`
+3. If Gatekeeper warns, allow it in **System Settings › Privacy & Security**
+4. Open `ZySign.app`
 
 ### Option B — Homebrew Cask
 
@@ -110,9 +111,6 @@ rm -rf ~/Library/Application\ Support/com.zyvor.zysign
 rm -f  ~/Library/Preferences/com.zyvor.zysign.plist
 sudo rm -rf /Library/ZySignBridge
 ```
-
-Or double-click `/Applications/ZySign.app/Contents/Resources/Uninstall ZySign.command`
-before removing the app.
 
 ---
 
